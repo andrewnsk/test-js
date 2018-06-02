@@ -1,6 +1,6 @@
-const day = process.argv[1];
-const month = process.argv[2].toLowerCase();
-const year = process.argv[3];
+const day = process.argv[2];
+const month = process.argv[3].toLowerCase();
+const year = process.argv[4];
 
 function daysLeft(day_, monthName, year_) {
   if (day_ > 31 || day_ < 1) throw new Error('Invalid day');

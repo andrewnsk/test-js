@@ -1,5 +1,5 @@
-const seconds1 = parseInt(process.argv[1], 10);
-const seconds2 = parseInt(process.argv[2], 10);
+const seconds1 = parseInt(process.argv[2], 10);
+const seconds2 = parseInt(process.argv[3], 10);
 
 function getTime(seconds1_, seconds2_) {
   if (seconds1_ > 100000 || seconds1_ < 1) throw new Error('Invalid input');

@@ -19,4 +19,4 @@ function convertBase(value, fromBase, toBase) {
   return newValue || '0';
 }
 
-process.stdout.write(convertBase(process.argv[1], process.argv[2], process.argv[3]));
+process.stdout.write(convertBase(process.argv[2], process.argv[3], process.argv[4]));
