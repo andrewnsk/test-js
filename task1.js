@@ -1,7 +1,7 @@
 function convertBase(value, fromBase, toBase) {
-  if (value > 10000 || value < 0) throw new Error('Invalid value');
-  if (fromBase > 36 || fromBase < 2) throw new Error('Invalid base');
-  if (toBase > 36 || toBase < 2) throw new Error('Invalid base');
+  if (value > 10000 || value < 0) return 0;
+  if (fromBase > 36 || fromBase < 2) return 0;
+  if (toBase > 36 || toBase < 2) return 0;
 
   const range = '0123456789abcdefghijklmnopqrstuvwxyz'.split('');
   const fromRange = range.slice(0, fromBase);
