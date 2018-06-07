@@ -7,7 +7,7 @@ function convertBase(value, fromBase, toBase) {
   const fromRange = range.slice(0, fromBase);
   const toRange = range.slice(0, toBase);
   let decValue = value.split('').reverse().reduce((carry, digit, index) => {
-    if (fromRange.indexOf(digit) === -1) throw new Error(`Invalid digit \`${digit}\` for base ${fromBase}.`);
+    if (fromRange.indexOf(digit) === -1) return 0;
     return carry + (fromRange.indexOf(digit) * (fromBase ** index));
   }, 0);
 
